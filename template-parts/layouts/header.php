@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>BASE - <?= /** @var TYPE_NAME  */
+    <title>Tùng Lê Ads - <?= /** @var TYPE_NAME  */
         (isset($data['title'])) ? $data['title'] : ''; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <!--CSS-->
@@ -18,6 +18,39 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js"></script>
     <script src="js/app.js"></script>
 </head>
-<body class="<?= ($is_home) ? 'isHome' : '' ?>">
+<body class="">
 <?php require "template-parts/commons/facebook_chat.php"; ?>
-<section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<div class="header" uk-sticky>
+    <div class="uk-container uk-padding-remove">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+            <div class="uk-navbar-left">
+                <a href="" class="uk-navbar-item uk-logo"><img src="images/logo.png" alt=""></a>
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li>
+                        <a href="#">Parent</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+
+            </div>
+
+            <div class="uk-navbar-right">
+                <div class="uk-navbar-item"></div>
+                <div class="uk-navbar-item"><a href="" class="uk-button uk-button-secondary">ĐĂNG KÝ</a></div>
+            </div>
+
+        </nav>
+    </div>
+</div>
