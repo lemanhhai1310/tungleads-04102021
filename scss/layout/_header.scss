@@ -1,0 +1,29 @@
+.header{
+  &__btn{
+    background-color: #18953c;
+    color: #ffffff;
+    @extend .fz-15;
+    border-color: #18953c;
+  }
+  &__navItem{
+    @include fluidx(80px,60px,min-height);
+  }
+  .uk-logo{
+    img{
+      @include fluidx(201px,160px,width);
+    }
+  }
+  .uk-navbar-item{
+    @extend .header__navItem;
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        color: #707070;
+        @extend .fz-15;
+        text-transform: initial;
+        @extend .header__navItem;
+      }
+    }
+  }
+}
