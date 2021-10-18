@@ -3,5 +3,40 @@
     &__overlay{
       background-color: rgba(#2d3184,0.57);
     }
+    &__box{
+      padding-top: 0;
+      padding-bottom: 0;
+      @include media-breakpoint-up('m'){
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    &__card{
+      &__txt1{
+        @extend .fz-30;
+        font-weight: bold;
+      }
+      &__txt2{
+        @extend .fz-24;
+      }
+      .uk-card-header{
+        background-color: #18953c;
+        text-align: center;
+        padding: 10px 15px;
+        color: #ffffff;
+        line-height: 1.2;
+      }
+      .uk-card-body{
+        background-color: rgba(#fff,0.48);
+        padding: 15px;
+      }
+      &__input{
+        @extend .fz-18;
+        color: #aaa;
+        &::placeholder{
+          color: #aaa;
+        }
+      }
+    }
   }
 }
