@@ -27,12 +27,13 @@
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
             <div class="uk-navbar-left">
+                <a href="" class="uk-navbar-item header__iconMenu uk-hidden@m"><img src="images/icon_menu.png" alt=""></a>
                 <a href="" class="uk-navbar-item uk-logo uk-visible@m" uk-toggle="cls: uk-padding-remove-left; mode: media; media: @l"><img src="images/logo.png" alt=""></a>
                 <ul class="uk-navbar-nav uk-visible@m">
-                    <li class="uk-active"><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Giới thiệu</a></li>
+                    <li class="uk-active"><a href="#" data-src="images/icon_home.png" uk-img>Trang chủ</a></li>
+                    <li><a href="#" data-src="images/icon_about.png" uk-img>Giới thiệu</a></li>
                     <li>
-                        <a href="#">Khóa học</a>
+                        <a href="#" data-src="images/icon_khoahoc.png" uk-img>Khóa học</a>
                         <div class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li><a href="#">Khóa học google ads</a></li>
@@ -42,7 +43,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="#">Thanh toán</a></li>
+                    <li><a href="#" data-src="images/icon_thanhtoan.png" uk-img>Thanh toán</a></li>
                 </ul>
 
             </div>
@@ -52,8 +53,12 @@
             <div class="uk-navbar-right">
                 <div class="uk-navbar-item uk-visible@m"><a href=""><img src="images/icon_lock.png" alt=""></a></div>
                 <div class="uk-navbar-item uk-visible@m" uk-toggle="cls: uk-padding-remove-right; mode: media; media: @l"><a href="" class="header__btn uk-button uk-button-secondary">ĐĂNG KÝ</a></div>
-                <div class="uk-navbar-item uk-hidden@m"></div>
-                <div class="uk-navbar-item uk-hidden@m"></div>
+                <div class="uk-navbar-item header__navM uk-hidden@m">
+                    <a href="" class="header__boxMenu"><img class="uk-responsive-width uk-responsive-height" src="images/icon_phone_m.png" alt=""></a>
+                </div>
+                <div class="uk-navbar-item header__navM uk-hidden@m">
+                    <a href="" class="header__boxMenu"><img class="uk-responsive-width uk-responsive-height" src="images/icon_user_m.png" alt=""></a>
+                </div>
             </div>
 
         </nav>

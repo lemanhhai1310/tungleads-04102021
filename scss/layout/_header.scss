@@ -5,6 +5,27 @@
     @extend .fz-15;
     border-color: #18953c;
   }
+  &__iconMenu{
+    img{
+      height: 20px;
+    }
+  }
+  &__navM{
+    &:nth-child(n+2){
+      padding-left: 0;
+    }
+  }
+  &__boxMenu{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #7d7d7d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 56%;
+    }
+  }
   &__navItem{
     @include fluidx(80px,60px,min-height);
   }
@@ -23,6 +44,14 @@
         @extend .fz-15;
         text-transform: initial;
         @extend .header__navItem;
+        background-repeat: no-repeat;
+        background-position: center left;
+        padding-left: 30px;
+      }
+      &:nth-child(3){
+        >a{
+          padding-left: 35px;
+        }
       }
     }
   }
